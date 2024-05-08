@@ -1,0 +1,140 @@
+#TopBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    margin:0cm;
+    border:0cm;
+    padding: 0cm;
+}
+
+.TopButton{
+    background-color: white;
+    border: none;
+    color: rgb(44, 4, 16);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 7px;
+
+    
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(211, 211, 211);
+}
+#Header{
+    color: white;
+    flex:1;
+    border:0em;
+    margin-left: 1em;
+}
+
+#MidBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+
+
+}
+
+#Login{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inputs{
+    height:1em;
+    width: 15em;
+}
+
+.InMid{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    
+}
+
+#SearchDiv{
+    flex-direction: row;
+    justify-content: start;
+    gap:10px;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(150, 150, 150);
+    display: none;
+    padding:0 1em;
+}
+
+
+#dialog, #dialogUser{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+    display: none;
+}
+
+
+#dialog-message, #dialog-message-user{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px;
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+}
+
+#Messages{
+    display: none;
+}
+
+#eye{
+    display: inline;
+    margin-left: -20px;
+    margin-top: -2px;
+    text-align: center;
+    background-color: none;
+    font-weight: normal;
+    cursor: pointer;
+    user-select: none;
+}
+
+#passw{
+    display: flex;
+}
+
+.individualPost, .individualComment{
+    margin: 1em;
+    background-color: rgb(238, 237, 237);
+    padding: 0.5em;
+    border-radius: 8px;
+}
+
+
+.individualPostAuthor, .individualCommentAuthor{
+    margin-left: 1em;
+    font-size: small;
+}
+
+.individualComment{
+    background-color: rgb(204, 204, 204);
+}
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My app</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="index.js"></script>
+
+</head>
+<body>
+    
+    
+    <div id="TopBar">
+        <h1 id="Header" >My app</h1>
+        <button class="TopButton" onclick="openDialog()">About</button>
+        <button class="TopButton" id="loginButton" onclick="loglog()">Login</button>
+    </div>
+
+    <div id="MidBar">
+        <div class="InMid">
+            <div><h2>My beautiful app</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae blanditiis facere magni minima iste odit labore eveniet, obcaecati fugit quo incidunt, dolore velit libero sunt, est pariatur! Ab, voluptatem non.
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+            </div>  
+        </div>
+        <div class="InMid">
+            <h2>Login</h2>
+            <div id="Login">
+                <input type="text" class="inputs" id="us" placeholder="Username">
+                <div id="passw">
+                    <input type="password" class="inputs" id="pass" placeholder="Password">
+                    <b id="eye">👁</b>
+                </div>
+                
+            </div>
+        </div>  
+    </div>
+
+    <div id="SearchDiv">
+        <p>Search Posts</p>
+        <input type="text" id="searchText" placeholder="Type a keyword">
+        <button onclick="getPosts()">Search</button>
+    </div>
+
+    <div id="Messages">
+        
+    </div>
+</body>
+
+<dialog id="dialog">
+    <div id="dialog-message">
+        <p class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, fugiat vero quaerat veritatis voluptates tenetur esse architecto iure harum ut!
+        </p>
+        <button class="content" onclick="closeDialog()">Close</button>
+    </div>
+    
+</dialog>
+
+<dialog id="dialogUser">
+    <div id="dialog-message-user">
+        <p class="content"></p>
+        <button class="content" onclick="closeUserDialog()">Close</button>
+    </div>
+    
+</dialog>
+
+</html>
